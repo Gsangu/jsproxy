@@ -12,24 +12,12 @@ jsproxy_config({
 
   // 节点配置
   node_map: {
-    'demo-hk': {
-      label: '演示服务-香港节点',
-      lines: {
-        // 主机:权重
-        'node-aliyun-hk-1.etherdream.com:8443': 1,
-        'node-aliyun-hk-2.etherdream.com:8443': 2,
-      }
-    },
-    'demo-sg': {
-      label: '演示服务-新加坡节点',
-      lines: {
-        'node-aliyun-sg.etherdream.com:8443': 1,
-      },
-    },
     'mysite': {
       label: '当前站点',
       lines: {
         [location.host]: 1,
+        'solitary-lab-9d1d.gsanweb.workers.dev': 2,
+        'tight-feather-652a.gsan.workers.dev': 3,
       }
     },
     // 该节点用于加载大体积的静态资源
@@ -42,6 +30,8 @@ jsproxy_config({
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
+        'solitary-lab-9d1d.gsanweb.workers.dev': 1,
+        'tight-feather-652a.gsan.workers.dev': 1,
         'b.007.workers.dev': 1,
         'b.hehe.workers.dev': 1,
         'b.lulu.workers.dev': 1,
