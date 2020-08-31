@@ -16,7 +16,7 @@ jsproxy_config({
       label: '当前站点',
       lines: {
         [location.host]: 1,
-        'tight-feather-652a.gsan.workers.dev': 3,
+        'ggss.gsan.workers.dev': 3,
       }
     },
     // 该节点用于加载大体积的静态资源
@@ -26,7 +26,7 @@ jsproxy_config({
       lines: {
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
-        'tight-feather-652a.gsan.workers.dev': 1
+        'ggss.gsan.workers.dev': 1
       }
     }
   },
